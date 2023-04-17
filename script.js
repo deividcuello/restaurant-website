@@ -9,6 +9,13 @@ toggleElement.addEventListener('click', function() {
     } else{
         nav.classList.remove("active");
     }
+
+    if (toggleElement.classList.contains('fa-xmark')){
+        header.style.backgroundColor = "var(--black)"
+    } else{
+        header.style.backgroundColor = "transparent"
+    }
+    
 });
 
 window.addEventListener("scroll", function() {
@@ -21,7 +28,6 @@ window.addEventListener("scroll", function() {
         header.style.backgroundColor = "var(--black)"
     } else{
         header.style.backgroundColor = "transparent"
-
     }
 });
 
