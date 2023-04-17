@@ -24,6 +24,7 @@
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
@@ -190,6 +191,7 @@ textarea{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
     
 }
 
@@ -214,7 +216,7 @@ textarea{
 #home .wave{
     position: absolute;
     width: 100%;
-    bottom: -1rem;   
+    bottom: -1rem; 
 }
 
 #about .content{
@@ -244,13 +246,13 @@ textarea{
 
 #meals .wave{
     position: relative;
-    width: 100vw;
-    transform: translateX(-5rem);
+    width: 110vw;
+    transform: translateX(-6rem);
 }
 
 #meals .wave:last-child{
     position: relative;
-    bottom: -4.26rem;
+    bottom: -4.3rem;
 }
 
 #meals .card-container{
@@ -449,6 +451,10 @@ textarea{
 }
 
 @media only screen and (max-width: 922px){
+    #header{
+        background-color: var(--black);
+    }
+
     #header .menu{
         align-self: flex-start;
     }
@@ -500,6 +506,15 @@ textarea{
     html{
         font-size: 55%;
     }
+
+    #meals .wave:last-child{
+        bottom: -4.0rem;
+    }
+
+    #people{
+        padding-top: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 684px){
@@ -519,5 +534,20 @@ textarea{
     #about .content .text{
         width: 95%;
         margin: auto;
+    }
+
+    #contact .contact-container form .full-name{
+        flex-direction: column;
+    }
+
+    #contact .contact-container form .full-name .first,
+    #contact .contact-container form .full-name .last{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 436px){
+    #meals .wave:last-child{
+        bottom: -2.0rem;
     }
 }
