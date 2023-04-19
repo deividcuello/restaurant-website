@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 
+/*VARIABLES*/
 :root{
     --yellow: #ffff2d;
     --white: rgb(240, 240, 240);
@@ -7,6 +8,7 @@
     --red: #ff3232;
 }
 
+/*GENERAL STYLES*/
 *{
     padding: 0;
     margin: 0;
@@ -116,6 +118,7 @@ textarea{
     transform: scale(1);
 }
 
+/*HEADER*/
 #header{
     padding: 1rem 5rem;
     position: fixed;
@@ -182,9 +185,10 @@ textarea{
     width: 100%;
 }
 
+/*HOME*/
 #home{
     min-height: 100vh;
-    background: url('https://cdn.pixabay.com/photo/2016/03/05/23/02/barbecue-1239434_1280.jpg') center left no-repeat;
+    background: url('./assets/barbecue_bg.jpg') center left no-repeat;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.568);
@@ -238,6 +242,7 @@ textarea{
     background-color: var(--white);
 }
 
+/*MEALS*/
 #meals{
     background-image:  radial-gradient(var(--yellow) 1.9000000000000001px, transparent 1.9000000000000001px), radial-gradient(#000000 1.9000000000000001px, var(--red) 1.9000000000000001px);
     background-size: 76px 76px;
@@ -301,6 +306,7 @@ textarea{
     padding: 1rem 2rem;
 }
 
+/*PEOPLE*/
 #people{
     background-color: var(--yellow);
 }
@@ -381,6 +387,7 @@ textarea{
     background-color: #000000;
 }
 
+/*CONTACT*/
 #contact .contact-container{
     background-color: var(--white);
     display: flex;
@@ -441,6 +448,7 @@ textarea{
     align-items: center;
 }
 
+/*FOOTER*/
 #footer{
     padding: 3rem;
 }
@@ -450,6 +458,7 @@ textarea{
     font-size: 1.5rem;
 }
 
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 922px){
     #header{
         background-color: var(--black);
