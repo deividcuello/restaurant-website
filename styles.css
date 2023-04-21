@@ -250,13 +250,11 @@ textarea{
 }
 
 #meals .wave{
-    position: relative;
-    width: 110vw;
-    transform: translateX(-6rem);
+    width: 100vw;
+    transform: translateX(-5rem);
 }
 
 #meals .wave:last-child{
-    position: relative;
     bottom: -5.59rem;
 }
 
